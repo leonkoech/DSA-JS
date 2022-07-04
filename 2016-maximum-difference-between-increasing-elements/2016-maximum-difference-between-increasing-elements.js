@@ -12,11 +12,11 @@ var maximumDifference = function(nums) {
             p1=p2
         }
         else {
-            if(nums[p2]-nums[p1]>maxDiff){
+            if(nums[p2]-nums[p1]!=0 && nums[p2]-nums[p1]>maxDiff){
                     maxDiff=nums[p2]-nums[p1]
             }
         }
         p2++
     }
-    return maxDiff!=0?maxDiff:-1
+    return maxDiff
 };
