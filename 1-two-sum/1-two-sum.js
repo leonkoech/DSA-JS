@@ -4,19 +4,18 @@
  * @return {number[]}
  */
 var twoSum = function(nums, target) {
-    var mHash = []
-    var finalArr=[]
+    var finalArr = new Map()
     
     for(let i=0;i<nums.length;i++){
         var compliment = target - nums[i]
-        if(mHash.includes(compliment)){
-            finalArr.push(nums.indexOf(compliment), i )
+        if(finalArr.has(compliment)){
+            return [finalArr.get(compliment), i]
         }
         else{
-            mHash.push(nums[i])
+            finalArr.set(nums[i],i)
         }
     }
-    return finalArr;
+    // return finalArr;
     
     
 };
