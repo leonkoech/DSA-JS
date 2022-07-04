@@ -12,8 +12,9 @@ var maximumDifference = function(nums) {
             p1=p2
         }
         else {
-            if(nums[p2]-nums[p1]!=0 && nums[p2]-nums[p1]>maxDiff){
-                    maxDiff=nums[p2]-nums[p1]
+            const diff = nums[p2]-nums[p1]
+            if(diff>0 && diff>maxDiff){
+                    maxDiff=diff
             }
         }
         p2++
