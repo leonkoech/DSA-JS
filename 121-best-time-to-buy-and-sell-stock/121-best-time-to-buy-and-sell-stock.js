@@ -25,8 +25,9 @@ var maxProfit = function(prices) {
             p1=p2
         }
         else{
-            if(prices[p2]-prices[p1]>maxP){
-                maxP = prices[p2]-prices[p1]
+            let diff = prices[p2]-prices[p1]
+            if(diff>maxP){
+                maxP = diff
             }
         }
         p2++
