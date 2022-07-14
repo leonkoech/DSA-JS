@@ -10,8 +10,8 @@ var maxArea = function(height) {
        p2 = height.length-1; //1
     
     while(p1<p2){
-        let min = Math.min(height[p1], height[p2])
-        let cur = min*(p2-p1)
+        let min = Math.min(height[p1], height[p2]),
+         cur = min*(p2-p1)
         maxA = Math.max(cur,maxA)
         
         if(min===height[p1]){
