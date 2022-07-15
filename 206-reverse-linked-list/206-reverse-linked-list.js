@@ -10,13 +10,10 @@
  * @return {ListNode}
  */
 var reverseList = function(head) {
-    // change next to prev
-    // change head to the last node 
-    // use a dummy head?
-    // const node = head
-    let prev = null
+    let prev = null,
+        next
     while(head){
-        let next = head.next
+        next = head.next
         head.next = prev
         prev = head
         head = next
