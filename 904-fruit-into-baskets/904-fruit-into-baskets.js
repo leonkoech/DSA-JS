@@ -54,7 +54,7 @@ var totalFruit = function(fruits) {
         max = Math.max(max, end-start+1)
         
     }
-    return max!=-Infinity?max:0
+    return max>-Infinity?max:0
     
     
     
