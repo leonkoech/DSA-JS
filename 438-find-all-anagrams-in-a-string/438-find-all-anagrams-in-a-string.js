@@ -10,7 +10,7 @@ const checkAnagrams=(word1, word2)=>{
     // array hould not contain anything greater than 0
     
     
-    var arr = new Array(256).fill(0)
+    var arr = new Array(26).fill(0)
     
     for(let i=0;i<word1.length;i++){
         arr[word1[i].charCodeAt(0)-"a".charCodeAt(0)] ++
