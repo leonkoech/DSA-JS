@@ -35,10 +35,12 @@ var findAnagrams = function(s, p) {
         end = p.length-1;
     
     while(end<s.length){
-        if(checkAnagrams(s.slice(start,end+1),p)){
-           
-            fArr.push(start)
+        if(p.indexOf(s[end]>-1 && p.indexOf(s[start]>-1))){
+            if(checkAnagrams(s.slice(start,end+1),p)){
+                     fArr.push(start)
+             }
         }
+      
         end++
         start++
     }
