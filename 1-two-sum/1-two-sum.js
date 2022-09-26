@@ -15,7 +15,7 @@ var twoSum = function(nums, target) {
             finalArr.set(nums[i],i)
         }
     }
-    // return finalArr;
+    return finalArr;
     
     
 };
