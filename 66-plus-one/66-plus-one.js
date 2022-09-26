@@ -10,8 +10,7 @@ var plusOne = function(digits) {
     // if 9 in the inpus is less than length
     // if no 9 present
     
-    let end = digits.length-1
-    while(end>-1){
+    for(let end = digits.length-1;end>-1;end--){
         if(digits[end]==9){
             digits[end] = 0
         }
@@ -19,7 +18,7 @@ var plusOne = function(digits) {
             digits[end]+=1
             return digits
         }
-        end--
     }
-    return [1,...digits]
+    digits.unshift(1)
+    return digits
 };
