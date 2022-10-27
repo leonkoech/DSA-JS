@@ -45,7 +45,6 @@ MapSum.prototype.sum = function(prefix) {
     // performs a search
     let node = this.root
     let count = 0
-    console.log(Object.values(node))
     for(let [key,val] of Object.entries(node)){
             if(this.startsWith(prefix,key)){
                 
